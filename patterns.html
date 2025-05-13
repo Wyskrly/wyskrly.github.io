@@ -5,6 +5,13 @@
   <meta charset="UTF-8">
   <title>Free Patterns | Wyskrly</title>
   <style>
+    .pattern-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
     html, body {
       margin: 0;
       padding: 0;
@@ -85,6 +92,22 @@
   <img src="Bannerupdate.png" alt="Wyskrly Banner" style="width: 100vw; height: 300px; object-fit: cover; display: block;">
   <h1>Free Patterns</h1>
 
+  <div style="text-align: center; margin: 20px 0;">
+    <label for="pattern-select"><strong>Jump to a category:</strong></label>
+    <select id="pattern-select" onchange="location = this.value;" style="margin-left: 10px; padding: 5px;">
+      <option value="#">Select a section</option>
+      <option value="#earrings">Earrings (WIP)</option>
+      <option value="#micro">Micro Patterns (WIP)</option>
+      <option value="#plush">Plush (WIP)</option>
+      <option value="#blankets">Blankets (WIP)</option>
+      <option value="#tapestry">Tapestry (WIP)</option>
+      <option value="#bags">Bags (WIP)</option>
+      <option value="#clothing">Clothing (WIP)</option>
+      <option value="#accessories">Accessories (WIP)</option>
+      <option value="#other">Other (WIP)</option>
+    </select>
+  </div>
+
   <div class="info-box">
     <h2 style="color: #6a5acd;">Basic Info</h2>
     <p>All patterns are written in U.S. terms. I try to keep things beginner-friendly whenever possible. You're free to sell finished items made from these patterns, just credit and link to me. You may not sell any patterns or post them to another site.</p>
@@ -94,49 +117,42 @@
     ➰ For everything else: 2mm–3mm</p>
   </div>
 
-  <div class="pattern-list">
-    <h2 style="color: #d88dbd;">Earrings</h2>
-    <p style="text-align: center; font-style: italic;">No patterns yet.</p>
-  </div>
-
-  <div class="pattern-list">
+  <div class="pattern-grid">
+$1
     <h2 style="color: #d88dbd;">Micro Patterns</h2>
     <p style="text-align: center; font-style: italic;">No patterns yet.</p>
   </div>
 
-  <div class="pattern-list">
+  <div class="pattern-list" id="plush">
     <h2 style="color: #d88dbd;">Plush</h2>
     <p style="text-align: center; font-style: italic;">No patterns yet.</p>
   </div>
 
-  <div class="pattern-list">
+  <div class="pattern-list" id="blankets">
     <h2 style="color: #d88dbd;">Blankets</h2>
     <p style="text-align: center; font-style: italic;">No patterns yet.</p>
   </div>
 
-  <div class="pattern-list">
+  <div class="pattern-list" id="tapestry">
     <h2 style="color: #d88dbd;">Tapestry</h2>
     <p style="text-align: center; font-style: italic;">No patterns yet.</p>
   </div>
 
-  <div class="pattern-list">
+  <div class="pattern-list" id="bags">
     <h2 style="color: #d88dbd;">Bags</h2>
     <p style="text-align: center; font-style: italic;">No patterns yet.</p>
   </div>
 
-  <div class="pattern-list">
+  <div class="pattern-list" id="clothing">
     <h2 style="color: #d88dbd;">Clothing</h2>
     <p style="text-align: center; font-style: italic;">No patterns yet.</p>
   </div>
 
-  <div class="pattern-list">
+  <div class="pattern-list" id="accessories">
     <h2 style="color: #d88dbd;">Accessories</h2>
     <p style="text-align: center; font-style: italic;">No patterns yet.</p>
   </div>
 
-  <div class="pattern-list">
-    <h2 style="color: #d88dbd;">Other</h2>
-    <p style="text-align: center; font-style: italic;">No patterns yet.</p>
   </div>
 </body>
 </html>
