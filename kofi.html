@@ -41,14 +41,56 @@
     .kofi-box a:hover {
       background-color: #c477aa;
     }
-  </style>
+      nav {
+      position: fixed;
+      top: 300px;
+      left: 0;
+      width: 150px;
+      background-color: #f5e6f7;
+      padding: 20px;
+      height: 100%;
+      border: 2px solid white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      border: 1px solid white;
+      border-radius: 6px;
+      padding: 5px;
+      background-color: #fff;
+      margin: 15px 0;
+    }
+    nav ul li a {
+      font-weight: bold;
+      color: #6a5acd;
+      text-decoration: none;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+</style>
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home Page</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="kofi.html">Ko-fi</a></li>
+      <li><a href="commissions.html">Commissions</a></li>
+      <li><a href="patterns.html">Free Patterns</a></li>
+      <li><a href="updates.html">Updates</a></li>
+      <li><a href="contact.html">Contact/About Me</a></li>
+    </ul>
+  </nav>
   <img src="Bannerupdate.png" alt="Wyskrly Banner" style="width: 100vw; height: 300px; object-fit: cover; display: block;">
-  <h1>Support Me on Ko-fi</h1>
+  <h1 style="margin-left: 180px;">Support Me on Ko-fi</h1>
 
-  <div class="kofi-box">
-    <p>If you enjoy my work and want to support me, you can grab some of my exclusive patterns over on Ko-fi!</p>
+  <div class="kofi-box" style="margin-left: 180px;">
+    <p>You can grab some of my exclusive patterns over on Ko-fi!</p>
     <a href="https://ko-fi.com/wyskrly" target="_blank">Visit My Ko-fi Page</a>
   </div>
 </body>
