@@ -8,7 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
-    /* Copy protection */
     body {
       -webkit-user-select: none;
       -moz-user-select: none;
@@ -32,7 +31,6 @@
       height: auto;
     }
 
-    /* Pattern Info Box */
     .pattern-box {
       max-width: 700px;
       margin: 40px auto;
@@ -53,7 +51,7 @@
       line-height: 1.6em;
     }
 
-    /* Home Button (Near Pattern Box) */
+    /* Home Button (near pattern box) */
     .home-button {
       position: absolute;
       left: -120px;
@@ -71,37 +69,73 @@
       background-color: #ccc;
     }
 
-    /* Coming Soon Text */
+    /* Section Layout */
+    .pattern-section {
+      max-width: 1000px;
+      margin: 60px auto 30px;
+      padding: 0 20px;
+    }
+
+    .pattern-section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #fff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
     .coming-soon {
       font-size: 1.5em;
-      margin-top: 60px;
+      margin-top: 10px;
       color: #bbb;
     }
   </style>
 
   <script>
-    // Disable right-click
     document.addEventListener('contextmenu', event => event.preventDefault());
   </script>
 </head>
 
 <body>
 
+  <!-- Home Button -->
+  <a href="https://wyskrlywebs.carrd.co/" class="home-button">Home</a>
+
   <!-- Banner Image -->
   <img src="Banner.png" alt="Banner" width="1200" height="200">
 
   <!-- Pattern Info Box -->
   <div class="pattern-box">
-    <!-- Home Button near the box -->
-    <a href="https://wyskrlywebs.carrd.co/" class="home-button">Home</a>
-
     <h1>Free Patterns</h1>
     <p>Do not repost any of my patterns without permission.</p>
     <p>For detailed, printable copies with lots of pictures, visit my Ko-fi to download a PDF version of the pattern for $1.</p>
   </div>
 
-  <!-- Coming Soon Message -->
-  <p class="coming-soon">Patterns coming soon. Check back later!</p>
+  <!-- Creatures -->
+  <div class="pattern-section">
+    <h2>Creatures</h2>
+    <p class="coming-soon">Coming soon...</p>
+  </div>
+
+  <!-- Decor & Accessories -->
+  <div class="pattern-section">
+    <h2>Decor & Accessories</h2>
+    <p class="coming-soon">Coming soon...</p>
+  </div>
+
+  <!-- Wearables -->
+  <div class="pattern-section">
+    <h2>Wearables</h2>
+    <p class="coming-soon">Coming soon...</p>
+  </div>
+
+  <!-- Other -->
+  <div class="pattern-section">
+    <h2>Other</h2>
+    <p class="coming-soon">Coming soon...</p>
+  </div>
 
 </body>
 </html>
