@@ -8,7 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
 
   <style>
-    /* GENERAL STYLES */
     body {
       background-color: #000;
       color: #fff;
@@ -22,20 +21,25 @@
       user-select: none;
     }
 
+    html, body {
+      overflow-x: hidden;
+    }
+
     img {
       max-width: 100%;
       height: auto;
     }
 
-    html, body {
-      overflow-x: hidden;
+    /* Pattern Box */
+    .pattern-box-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 40px;
+      position: relative;
     }
 
-    /* HOME BUTTON */
     .home-button {
-      position: absolute;
-      left: calc(50% - 470px); /* relative to center */
-      top: 470px;
       background-color: #fff;
       color: #000;
       padding: 10px 16px;
@@ -43,20 +47,20 @@
       border-radius: 6px;
       font-weight: 600;
       transition: background-color 0.3s ease;
+      margin-right: 20px;
+      height: fit-content;
     }
 
     .home-button:hover {
       background-color: #ccc;
     }
 
-    /* HEADER BOX */
     .pattern-box {
       max-width: 700px;
-      margin: 40px auto;
       padding: 30px;
       border: 2px solid #fff;
       border-radius: 10px;
-      position: relative;
+      text-align: center;
     }
 
     h1 {
@@ -70,12 +74,12 @@
       line-height: 1.6em;
     }
 
-    /* CATEGORY GRID */
+    /* Category Grid */
     .category-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      max-width: 1000px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 1200px;
       margin: 60px auto;
       padding: 0 20px;
     }
@@ -88,7 +92,7 @@
     }
 
     .category-card h2 {
-      font-size: 1.8em;
+      font-size: 1.5em;
       margin-bottom: 15px;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -97,6 +101,18 @@
     .category-card p {
       font-size: 1.1em;
       color: #bbb;
+    }
+
+    @media (max-width: 1000px) {
+      .category-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 
@@ -108,20 +124,21 @@
 
 <body>
 
-  <!-- BANNER IMAGE -->
+  <!-- Banner Image -->
   <img src="Banner.png" alt="Banner" width="1200" height="200" />
 
-  <!-- INTRO / PATTERN BOX -->
-  <div class="pattern-box">
-    <!-- Home button appears near this box -->
+  <!-- Pattern Info Box + Home Button -->
+  <div class="pattern-box-wrapper">
     <a href="https://wyskrlywebs.carrd.co/" class="home-button">Home</a>
 
-    <h1>Free Patterns</h1>
-    <p>Do not repost any of my patterns without permission.</p>
-    <p>For detailed, printable copies with lots of pictures, visit my Ko-fi to download a PDF version of the pattern for $1.</p>
+    <div class="pattern-box">
+      <h1>Free Patterns</h1>
+      <p>Do not repost any of my patterns without permission.</p>
+      <p>For detailed, printable copies with lots of pictures, visit my Ko-fi to download a PDF version of the pattern for $1.</p>
+    </div>
   </div>
 
-  <!-- CATEGORY GRID -->
+  <!-- Category Grid -->
   <div class="category-grid">
     <div class="category-card">
       <h2>Creatures</h2>
