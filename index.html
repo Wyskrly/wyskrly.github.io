@@ -32,7 +32,7 @@
       height: auto;
     }
 
-    /* Container for the box */
+    /* Pattern Info Box */
     .pattern-box {
       max-width: 700px;
       margin: 40px auto;
@@ -51,6 +51,25 @@
       font-size: 1.1em;
       line-height: 1.6em;
     }
+
+    /* Home Button (Top Left) */
+    .home-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #fff;
+      color: #000;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      z-index: 999;
+      transition: background-color 0.3s ease;
+    }
+
+    .home-button:hover {
+      background-color: #ccc;
+    }
   </style>
 
   <script>
@@ -60,6 +79,9 @@
 </head>
 
 <body>
+
+  <!-- Home Button -->
+  <a href="https://wyskrlywebs.carrd.co/" class="home-button">Home</a>
 
   <!-- Banner Image -->
   <img src="Banner.png" alt="Banner" width="1200" height="200">
