@@ -1,88 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
-  <title>Wyskrly's Web</title>
+  <title>Free Patterns | Nikky</title>
+
+  <!-- Font: Quicksand -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
-    html, body {
+    /* Copy protection */
+    body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Quicksand', sans-serif;
       margin: 0;
       padding: 0;
-      font-family: 'Quicksand', sans-serif;
-      background-color: #fffafc;
-      color: #333;
-      line-height: 1.6;
-      font-size: 18px;
-    }
-    h1 {
       text-align: center;
-      color: #d88dbd;
-      font-size: 36px;
     }
-    a {
-      color: #6a5acd;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    nav {
-      border: 2px solid white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      position: fixed;
-      top: 300px;
-      left: 0;
-      width: 150px;
-      background-color: #f5e6f7;
-      padding: 20px;
+
+    html, body {
       height: 100%;
+      overflow-x: hidden;
     }
-    nav ul {
-      list-style: none;
-      padding: 0;
+
+    img {
+      max-width: 100%;
+      height: auto;
     }
-    nav ul li {
-      border: 1px solid white;
-      border-radius: 6px;
-      padding: 5px;
-      background-color: #fff;
-      margin: 15px 0;
+
+    /* Container for the box */
+    .pattern-box {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 30px;
+      border: 2px solid #fff;
+      border-radius: 10px;
     }
-    nav ul li a {
-      font-weight: bold;
+
+    h1 {
+      font-size: 2.5em;
+      text-decoration: underline;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6em;
     }
   </style>
+
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
 </head>
+
 <body>
-  <img src="Bannerupdate.png" alt="Wyskrly Banner" style="width: 100vw; height: 300px; object-fit: cover; display: block;">
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home Page</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="kofi.html">Ko-fi</a></li>
-      <li><a href="commissions.html">Commissions</a></li>
-      <li><a href="patterns.html">Free Patterns</a></li>
-      <li><a href="updates.html">Updates</a></li>
-      <li><a href="contact.html">Contact/About Me</a></li>
-    </ul>
-  </nav>
+  <!-- Banner Image -->
+  <img src="Banner.png" alt="Banner" width="1200" height="200">
 
-  <div style="max-width: 600px; margin: 40px auto; padding: 20px; border: 2px solid #d88dbd; border-top-width: 6px; border-radius: 10px;">
-    <h1>Wyskrly's Web</h1>
-    <p>Thanks for joining me on this yarn-filled journey as I learn and grow in crochet! 🧶
-    You’re welcome to stitch along with me using free patterns I’ll share here, or snag a few on Ko-fi to buy me some coffee<3.</p>
-
-    <p style="font-size: 20px; font-weight: bold; margin-top: 20px; color: #d88dbd; text-align: center;">
-      Follow me on IG @Wyskrlywebs
-    </p>
+  <!-- Pattern Info Box -->
+  <div class="pattern-box">
+    <h1>Free Patterns</h1>
+    <p>Do not repost any of my patterns without permission.</p>
+    <p>For detailed, printable copies with lots of pictures, visit my Ko-fi to download a PDF version of the pattern for $1.</p>
   </div>
 
-  <div style="max-width: 600px; margin: 20px auto 60px; padding: 20px; border: 2px solid #d88dbd; border-top-width: 6px; border-radius: 10px;">
-    <p style="text-align: center; font-size: 18px;">
-      I post free patterns, take commission requests, and share paid designs on Ko-fi — all in my own pastel goth style. Check out the navigation for more info.
-    </p>
-  </div>
 </body>
 </html>
