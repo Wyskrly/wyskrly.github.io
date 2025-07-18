@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Free Patterns | Nikky</title>
 
   <!-- Font: Quicksand -->
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
 
   <style>
+    /* GENERAL STYLES */
     body {
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
       background-color: #000;
       color: #fff;
       font-family: 'Quicksand', sans-serif;
       margin: 0;
       padding: 0;
       text-align: center;
-    }
-
-    html, body {
-      height: 100%;
-      overflow-x: hidden;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
 
     img {
@@ -31,6 +27,29 @@
       height: auto;
     }
 
+    html, body {
+      overflow-x: hidden;
+    }
+
+    /* HOME BUTTON */
+    .home-button {
+      position: absolute;
+      left: calc(50% - 470px); /* relative to center */
+      top: 470px;
+      background-color: #fff;
+      color: #000;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .home-button:hover {
+      background-color: #ccc;
+    }
+
+    /* HEADER BOX */
     .pattern-box {
       max-width: 700px;
       margin: 40px auto;
@@ -51,25 +70,7 @@
       line-height: 1.6em;
     }
 
-    /* Home Button (near pattern box) */
-    .home-button {
-      position: absolute;
-      left: -120px;
-      top: 30px;
-      background-color: #fff;
-      color: #000;
-      padding: 10px 16px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-    }
-
-    .home-button:hover {
-      background-color: #ccc;
-    }
-
-    /* Category Grid Layout */
+    /* CATEGORY GRID */
     .category-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -90,4 +91,55 @@
       font-size: 1.8em;
       margin-bottom: 15px;
       text-transform: uppercase;
-      letter-spaci
+      letter-spacing: 1px;
+    }
+
+    .category-card p {
+      font-size: 1.1em;
+      color: #bbb;
+    }
+  </style>
+
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
+</head>
+
+<body>
+
+  <!-- BANNER IMAGE -->
+  <img src="Banner.png" alt="Banner" width="1200" height="200" />
+
+  <!-- INTRO / PATTERN BOX -->
+  <div class="pattern-box">
+    <!-- Home button appears near this box -->
+    <a href="https://wyskrlywebs.carrd.co/" class="home-button">Home</a>
+
+    <h1>Free Patterns</h1>
+    <p>Do not repost any of my patterns without permission.</p>
+    <p>For detailed, printable copies with lots of pictures, visit my Ko-fi to download a PDF version of the pattern for $1.</p>
+  </div>
+
+  <!-- CATEGORY GRID -->
+  <div class="category-grid">
+    <div class="category-card">
+      <h2>Creatures</h2>
+      <p>Coming soon...</p>
+    </div>
+    <div class="category-card">
+      <h2>Decor & Accessories</h2>
+      <p>Coming soon...</p>
+    </div>
+    <div class="category-card">
+      <h2>Wearables</h2>
+      <p>Coming soon...</p>
+    </div>
+    <div class="category-card">
+      <h2>Other</h2>
+      <p>Coming soon...</p>
+    </div>
+  </div>
+
+</body>
+</html>
